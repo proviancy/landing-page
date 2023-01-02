@@ -20,6 +20,7 @@ body {
     background-color: #1f2937;
     color: #f9faf8;
     margin: 0;
+    flex: 0;
 }
 
 .header > * {
@@ -56,6 +57,7 @@ a {
     padding: 64px;
     gap: 64px;
     align-items: center;
+    flex: 1;
 }
 
 .intro-left {
@@ -89,25 +91,54 @@ a {
     color: #e5e7eb;
     font-weight: 800;
     font-size: 16px;
-    padding: 12px;
+    padding: 8px;
     border-radius: 8px;
     flex: auto;
     width: 120px;
     border-width: 0px;
+    margin: 0;
+}
+
+.gallery {
+    flex: 1;
+    justify-content: center;
+    gap: 64px;
 }
 
 .gallery-title {
+    padding-top: 32px;
     font-size: 36px;
     font-weight: 1000;
     color: #1f2937;
+    text-align: center;
+}
+
+.gallery-slides {
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.slide {
+    align-items: center;
+    flex-basis: 128px;
+}
+
+.slide-image > img {
+    border: 6px solid;
+    border-color: #3882f6;
+    border-radius: 16px;
 }
 
 .slide-text {
     color: #252c35;
+    text-align: center;
 }
 
 .quote {
     background-color: #e5e7eb;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-text {
@@ -115,26 +146,69 @@ a {
     font-weight: 500;
     font-style: italic;
     color: #1f2937;
+    padding: 128px 128px 0px 128px;
 }
 
 .quote-source {
     font-size: 28px;
     font-weight: 800;
+    text-align: right;
+    padding: 16px 128px 96px 0;
+    align-self: flex-end;
 }
 
 .call {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-box {
+    margin: 32px 256px;
+    padding: 32px 64px;
     background-color: #3882f6;
+    gap: 128px;
+    border-radius: 16px;
 }
 
 .call-title, .call-text {
     color: #f9faf8;
 }
 
+.call-text {
+    gap: 12px;
+    font-size: 13px;
+}
+
 .call-title {
     font-size: 24px;
+    font-weight: 700;
+}
+
+.call-button {
+    justify-content: center;
+    align-items: center;
+}
+
+.call-click {
+    margin: 0 16px;
+    padding: 4px 16px;
+    background-color: #3882f6;
+    border: 3px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .footer {
     background-color: #1f2937;
     color: #e5e7eb;
+    flex: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > div {
+    margin: 32px;
 }
